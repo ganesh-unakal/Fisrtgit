@@ -92,7 +92,13 @@
             localStorage.setItem('lname', lastName)
             localStorage.setItem('email',emailId)
             localStorage.setItem('DOB',dob)
-            localStorage.setItem('phone',pNo)
+            localStorage.setItem('phone',pNo);//over 10T
+
+            //11. adding deatils in js object way
+            const obj={
+                fname,lname,email, phone,dob}
+            localStorage.setItem('userDetails',JSON.stringify(obj));
+           
         }
     </script>
 
