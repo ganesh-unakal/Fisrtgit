@@ -84,19 +84,19 @@
             var name=event.target.fname.value
             var lastName=event.target.lname.value
             var emailId=event.target.email.value
-            var dob=event.target.DOB.value
+            var doo=event.target.DOB.value
             var pNo=event.target.phone.value
 
 
             localStorage.setItem('fname', name)
             localStorage.setItem('lname', lastName)
             localStorage.setItem('email',emailId)
-            localStorage.setItem('DOB',dob)
+            localStorage.setItem('DOB',doo)
             localStorage.setItem('phone',pNo);//over 10T
 
             //11. adding deatils in js object way
             const obj={
-                fname,lname,email, phone,dob}
+                name,lastName,emailId, pNo,doo}
             localStorage.setItem('userDetails',JSON.stringify(obj));
            
         }
