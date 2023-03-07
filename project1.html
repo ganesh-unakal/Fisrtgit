@@ -56,7 +56,9 @@ function showDetailsOnScreen(details){
     document.getElementById('desc').value = ''
     document.getElementById('cat').value = ''
     const parent = document.getElementById('userslist')
-    const child = `<li id=${details.amount}>${details.amount} - ${details.description} - ${details.category} <button onclick=Edit('${details.amount}','${details.description}','${details.category}')>Edit </button> <button onclick = deleteEntry('${details.amount}')>Delete </button></li>`
+    const child = `<li id=${details.amount}>${details.amount} - ${details.description} - ${details.category}
+    <button onclick=Edit('${details.amount}','${details.description}','${details.category}')>Edit </button>
+    <button onclick = deleteEntry('${details.amount}')>Delete </button></li>`
     parent.innerHTML += child
 }
 
